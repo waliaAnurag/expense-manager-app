@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -16,5 +15,13 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: [
+    "bg-indigo-600",
+    "hover:bg-indigo-700",
+    "text-white",
+    "hover:bg-indigo-50",
+    "hover:text-indigo-700",
+    "hover:border-indigo-300",
+  ],
 };
 export default config;
